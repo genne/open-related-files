@@ -25,7 +25,13 @@
                 "command": "extension.findComponent",
                 "title": "Find component"
             }
-        ]
+        ],
+        "keybindings": [{
+            "command": "extension.findComponent",
+            "key": "ctrl+shift+t",
+            "mac": "cmd+shift+t",
+            "when": "editorTextFocus"
+        }]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
