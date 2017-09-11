@@ -11,14 +11,19 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.openRelatedFiles",
+        "onCommand:extension.findComponent"
     ],
     "main": "./out/src/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.openRelatedFiles",
+                "title": "Open related files"
+            },
+            {
+                "command": "extension.findComponent",
+                "title": "Find component"
             }
         ]
     },
